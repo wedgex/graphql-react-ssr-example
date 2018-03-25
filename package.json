@@ -1,0 +1,15 @@
+{
+  "name": "graphql-react-ssr-example",
+  "version": "1.0.0",
+  "description": "Example App For SSR with React and Graphql",
+  "main": "index.js",
+  "author": "Hunter Haydel",
+  "license": "MIT",
+  "dependencies": {
+    "apollo-server-express": "^1.3.2",
+    "body-parser": "^1.18.2",
+    "express": "^4.16.3",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0"
+  }
+}
