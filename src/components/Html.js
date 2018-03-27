@@ -8,6 +8,14 @@ module.exports = props => (
     </head>
     <body>
       <div id="app">{props.children}</div>
+      <script
+        type="application/javascript"
+        dangerouslySetInnerHTML={{
+          __html: `window.__APOLLO_STATE__ = ${JSON.stringify(
+            props.apolloClient.extract()
+          ).replace(/</g, "\\u003c")}`
+        }}
+      />
       <script type="application/javascript" src="/assets/client.js" />
     </body>
   </html>

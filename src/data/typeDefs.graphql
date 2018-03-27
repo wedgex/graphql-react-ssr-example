@@ -1,8 +1,9 @@
 type Query {
-  characters: [Character]!
+  characters(offset: Int!, limit: Int!): [Character]!
 }
 
 type Character {
+  id: Int!
   name: String!
   class: String!
 }
