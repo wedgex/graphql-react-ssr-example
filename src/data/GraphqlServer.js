@@ -3,7 +3,6 @@ const { makeExecutableSchema } = require("graphql-tools");
 const fs = require("fs");
 const path = require("path");
 
-console.log(__dirname);
 const typeDefs = fs
   .readFileSync(path.join(__dirname, "typeDefs.graphql"))
   .toString();
@@ -12,6 +11,18 @@ const fakeData = [
   {
     name: "Rosie",
     class: "Monk"
+  },
+  {
+    name: "K'Thriss",
+    class: "Warlock"
+  },
+  {
+    name: "Walnut",
+    class: "Druid"
+  },
+  {
+    name: "Donaar",
+    class: "Paladin"
   }
 ];
 
